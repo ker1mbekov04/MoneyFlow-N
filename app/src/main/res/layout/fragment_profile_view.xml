@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.fragments.ProfileViewFragment">
+    <LinearLayout
+        android:id="@+id/container1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Логотип/изображение -->
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="25dp"
+            android:src="@drawable/moneyfoww"
+            android:scaleType="centerCrop"
+            android:background="@drawable/rounded_image"/>
+
+        <!-- Заголовок -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:gravity="center"
+            android:text="Аккаунт"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <!-- Поле ввода Email или телефона -->
+        <TextView
+            android:id="@+id/nameAndSurname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50px"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:ems="10"
+            android:text="Имя и Фамилия"
+            android:inputType="textEmailAddress"
+           />
+
+
+        <!-- Поле ввода пароля -->
+        <TextView
+            android:id="@+id/EmailOrPhone1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50px"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:ems="10"
+            android:text="Емайл или телефон"
+            android:inputType="textEmailAddress"
+            />
+
+
+
+
+
+
+        <Button
+            android:id="@+id/btnOut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20sp"
+            android:width="180sp"
+            android:backgroundTint="@color/blue"
+            android:text="Выйти"
+            android:textColor="@color/white"
+            android:textSize="38px" />
+
+
+
+    </LinearLayout>
+
+</FrameLayout>

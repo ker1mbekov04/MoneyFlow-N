@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.fragments.ProfileFragment"
+    android:id="@+id/profile">
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Логотип/изображение -->
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/moneyfoww"
+            android:scaleType="centerCrop"
+            android:background="@drawable/rounded_image"/>
+
+        <!-- Заголовок -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:gravity="center"
+            android:text="Авторизация"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <!-- Поле ввода Email или телефона -->
+        <EditText
+            android:id="@+id/editEmailOrPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50px"
+            android:ems="10"
+            android:hint="Электронная почта или телефон"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/silver" />
+
+        <TextView
+            android:id="@+id/last"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Поле ввода пароля -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/editPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Пароль"
+                android:inputType="textPassword" />
+
+            <!-- Ссылка "Забыли пароль?" -->
+            <TextView
+                android:id="@+id/forgot_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-34dp"
+                android:clickable="true"
+                android:onClick="forgotPasswordClicked"
+                android:paddingLeft="280dp"
+                android:text="Забыли пароль?"
+                android:textColor="@color/blue" />
+
+        </RelativeLayout>
+
+        <!-- Кнопка "Войти" -->
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20sp"
+            android:width="180sp"
+            android:backgroundTint="@color/blue"
+            android:text="Войти"
+            android:textColor="@color/white"
+            android:textSize="38px" />
+
+        <!-- Разделитель "ИЛИ" -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="20dp"
+            android:text="____________________           ИЛИ               __________________"
+            android:textColor="@color/silver" />
+
+        <!-- Кнопка "Зарегистрироваться" -->
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="244dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:backgroundTint="#00FFFFFF"
+            android:foreground="@drawable/blue_border"
+            android:text="Зарегистироватся"
+            android:textAllCaps="false"
+            android:textColor="@color/blue" />
+
+    </LinearLayout>
+
+</FrameLayout>

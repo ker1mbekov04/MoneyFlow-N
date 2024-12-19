@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.fragments.RegisterProfilFragment">
+    <LinearLayout
+        android:id="@+id/container1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Логотип/изображение -->
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/moneyfoww"
+            android:scaleType="centerCrop"
+            android:background="@drawable/rounded_image"/>
+
+        <!-- Заголовок -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:gravity="center"
+            android:text="Авторизация"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editnameAndSurname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50px"
+            android:ems="10"
+            android:hint="Имя и Фамилия"
+
+            android:textColor="@color/silver" />
+
+        <!-- Поле ввода Email или телефона -->
+        <EditText
+            android:id="@+id/editEmailOrPhone1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50px"
+            android:ems="10"
+            android:hint="Электронная почта или телефон"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/silver" />
+
+
+
+        <EditText
+            android:id="@+id/editPassword1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Пароль"
+            android:inputType="textPassword"
+            android:layout_marginTop="20dp"/>
+
+        <!-- Кнопка "Войти" -->
+        <Button
+            android:id="@+id/btnRegister1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20sp"
+            android:width="180sp"
+            android:backgroundTint="@color/blue"
+            android:text="Регистироваться"
+            android:textColor="@color/white"
+            android:textSize="38px" />
+
+        <!-- Разделитель "ИЛИ" -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="20dp"
+            android:text="____________________           ИЛИ               __________________"
+            android:textColor="@color/silver" />
+
+        <!-- Кнопка "Зарегистрироваться" -->
+        <Button
+            android:id="@+id/btnLogin1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:backgroundTint="#00FFFFFF"
+            android:foreground="@drawable/blue_border"
+            android:text="Войти"
+            android:textAllCaps="false"
+            android:textColor="@color/blue" />
+
+    </LinearLayout>
+
+</FrameLayout>
